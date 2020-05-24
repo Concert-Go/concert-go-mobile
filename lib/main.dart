@@ -9,10 +9,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        textTheme: GoogleFonts.titilliumWebTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
+          textTheme: GoogleFonts.titilliumWebTextTheme(
+            Theme.of(context).textTheme,
+          ),
+          primaryTextTheme: GoogleFonts.titilliumWebTextTheme(
+            Theme.of(context).textTheme,
+          )),
       home: SplashScreen(),
     );
   }
